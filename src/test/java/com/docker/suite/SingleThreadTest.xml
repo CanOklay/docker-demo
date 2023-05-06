@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suiste SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SingleThreadTest">
+    <listeners>
+        <listener class-name="com.docker.listener.Listener"/>
+    </listeners>
+    <test name="ChromeTest">
+        <parameter name="browser" value="grid-chrome"/>
+        <classes>
+            <class name="com.docker.test.LoginTest"/>
+        </classes>
+    </test>
+</suite>
